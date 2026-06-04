@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+   
+     background: linear-gradient(to left, rgb(200, 37, 0), rgb(240, 120, 8), rgb(222, 246, 4),  rgb(0, 119, 6), rgb(112, 3, 148), rgb(0, 68, 136));
+
+}
+ul{
+     gap: 40px;
+    display: flex;
+     color: white;
+    font-size: 55px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+.logo h1{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    border-radius: 50%;
+
+}
+.logo img{
+     width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 310px;
+    position: relative;
+    top: 30px;
+
+}
+
