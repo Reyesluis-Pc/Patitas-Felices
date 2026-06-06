@@ -18,10 +18,20 @@ ul{
     margin: 0;
     justify-content: center;
 }
+ li{
+    transition: transform 1s ease;
+ }
+
+ li:hover{
+     transform: scale(1.5);
+    transition: transform 1s ease;
+ }
+
 a{
     color: white;
     text-align: center;
     font-size: 25px;
+    text-decoration: none;
 
 }
 .logo h1{
@@ -33,17 +43,82 @@ a{
 .logo{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     border-radius: 50%;
 
 }
 .logo img{
-     width: 130px;
-    height: 130px;
+     width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-left: 310px;
+    margin-left: 300px;
     position: relative;
     top: 30px;
 
 }
+/* para ipad */
+@media (min-width: 768px) and (max-width: 1024px){
 
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    a{
+        font-size: 22px;
+    }
+
+    .logo{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo img{
+        width: 90px;
+        height: 90px;
+        margin-left: 0;
+        top: 0;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+}
+
+/* para telefono */
+
+@media (max-width: 767px){
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    a{
+        font-size: 18px;
+    }
+
+    .logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+        margin-left: 0;
+        top: 0;
+    }
+
+    .logo h1{
+        font-size: 28px;
+    }
+
+    li:hover{
+        transform: scale(1.1);
+    }
+}
