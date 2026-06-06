@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+}
+
+header{
+    background: #d35400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.Menú{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.Platillo:hover{
+    transform: scale(1.05);
+}
+
+.Platillo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Platillo h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.Platillo p{
+    text-align: center;
+    color: #d35400;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer{
+    background: #1b1b1b;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 25px 15px;
+    flex-wrap: wrap;
+}
+
+.footer-item{
+    margin: 10px;
+}
+
+.icono{
+    font-size: 40px;
+    color: #d4a017;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-item h3{
+    color: #d4a017;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.footer-item p{
+    font-style: italic;
+    font-size: 16px;
+}
+
+.footer-item h2{
+    color: #d4a017;
+    margin-bottom: 10px;
+}
+
+.Corazón{
+    color: red;
+    font-size: 25px;
+}
